@@ -173,3 +173,38 @@ footer p img {
   height: 100%;
   object-fit: cover;
 }
+@media screen and  (min-width: 920px) {
+  .topPage {
+    display: flex;
+  }
+  .topPage header {
+    flex-basis: 38%;
+  }
+  .topPage main {
+    flex-basis: 62%;
+  }
+  .linkList {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  .linkList li {
+    flex-basis: 47%;
+    margin-bottom: 20px;
+  }
+  .linkList::before {
+    content: "";
+    width: 47%;
+    background: url(../images/top_pclogo.svg) no-repeat center center/72%;
+  }
+  .topPage main {
+    display: flex;
+    align-items: center;
+  }
+  .topPage header {
+    height: 100vh;
+    margin-bottom: 0;
+  }
+}
